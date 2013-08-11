@@ -6,6 +6,9 @@
 	records 0 - 9999, 10000 - 19999, 150000 - 159999. The data is loaded 
 	as and when requested, caches are filled in in the background.
 
+	Requires
+	jQuery
+
 */
 
 
@@ -19,6 +22,8 @@ if (typeof blackvoid.tools === undefined)
 	blackvoid.tools = {};
 }
 
+(function () {
+
 blackvoid.tools.JSDataCache = function(countmethod,getmethod,settings) {
 	var defaults = {
 		BufferSize: 10000,
@@ -26,8 +31,21 @@ blackvoid.tools.JSDataCache = function(countmethod,getmethod,settings) {
 		ChunkSize: 50		
 	};
 
+	var buffers = new Array();
+
+	var newBuffer = function() {
+		
+	}
+
+
+
+	/* Public Methods */
 	this.GetData = function(from,to,callback)
 	{
 
 	};
 };
+
+
+
+})();
